@@ -1,20 +1,20 @@
 {
 	"compiler": {
-		"version": "0.8.16+commit.07a7930e"
+		"version": "0.8.26+commit.8a97fa7a"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
 				"inputs": [],
-				"name": "addBalance",
+				"name": "addMoneyToContract",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "addMoneyToContract",
+				"name": "deposit",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -40,7 +40,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getContractBalance",
+				"name": "getTotalBankBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -53,7 +53,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "withdraw",
+				"name": "withdrawal",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -72,9 +72,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"gist-9818315be422567874850c05f65949d6/contracts/subquest3.sol": "SmartBankAccount"
+			"contracts/ArifBank.sol": "ArifBank"
 		},
-		"evmVersion": "london",
+		"evmVersion": "cancun",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -86,12 +86,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"gist-9818315be422567874850c05f65949d6/contracts/subquest3.sol": {
-			"keccak256": "0x80f21d887fce2dc447c0cad33452e1a66a8fb6a575744b7de2ad8b15373d3c97",
+		"contracts/ArifBank.sol": {
+			"keccak256": "0xbde87c9190822a76e2922cf916d9f0c055f223424867e11103740329214d49c2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f3320cb0650ba18d97a4fef55778792664564d55e52b9bb049f04ac6ed45238f",
-				"dweb:/ipfs/QmbDYGd6r2D5RjKgfjEoURoq9Nost7TeX9HfPjbxmk7rMT"
+				"bzz-raw://8972adde93651c642ee494ee025f83ad64e7cbf55f1558253e87be1975456d97",
+				"dweb:/ipfs/QmRSxkWxYEevGUsSPoQqjcMDNy1QH2BGCDxboCR8ENDxcC"
 			]
 		}
 	},
