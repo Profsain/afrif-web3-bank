@@ -6,15 +6,40 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "addMoneyToContract",
-				"outputs": [],
-				"stateMutability": "payable",
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "balance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "deposit",
+				"name": "exchangeRateStored",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mint",
 				"outputs": [],
 				"stateMutability": "payable",
 				"type": "function"
@@ -22,12 +47,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_userAddress",
-						"type": "address"
+						"internalType": "uint256",
+						"name": "redeemTokens",
+						"type": "uint256"
 					}
 				],
-				"name": "getBalance",
+				"name": "redeem",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -35,27 +60,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getTotalBankBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "withdrawal",
-				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -72,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ArifBank.sol": "ArifBank"
+			"contracts/ArifBank.sol": "cETH"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
